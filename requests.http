@@ -1,0 +1,16 @@
+GET localhost:8080/quote
+
+###
+# { "result": "\"Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.\"" #}
+
+POST localhost:8080/translate
+Content-Type: application/json
+
+{
+  "sourceLanguage": "en",
+  "targetLanguage": "de",
+  "text": "Never half-ass two things. Whole-ass one thing."
+}
+
+###
+# { "result": "Niemals zwei Dinge halbherzig machen. Sei bei einer Sache ganz dabei." }
